@@ -1,0 +1,19 @@
+@import "calendar";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(49, 48, 50);
+  margin: 0;
+  padding: 0;
+}

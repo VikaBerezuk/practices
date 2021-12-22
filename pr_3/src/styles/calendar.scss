@@ -1,0 +1,91 @@
+$color-white: white;
+$text-centre: center;
+
+.calendar {
+  background-color: $color-white;
+
+  &__mouth,
+  &__weeks {
+    background-color: black;
+  }
+
+  &__mouth {
+    color: $color-white;
+    text-align: $text-centre;
+    padding-top: 30px;
+    font-size: 24px;
+  }
+
+  &__weeks {
+    display: flex;
+    justify-content: space-around;
+    color: $color-white;
+    font-size: 12px;
+    height: 25px;
+    align-items: $text-centre;
+  }
+
+  &__days {
+    display: flex;
+
+    label {
+      padding: 5px;
+      width: 50px;
+      height: 45px;
+      line-height: 37px;
+    }
+
+    input {
+      margin-left: -5px;
+      visibility: hidden;
+    }
+
+    &-work {
+      cursor: pointer;
+
+      &:hover {
+        color: $color-white;
+        background-color: rgb(96, 77, 215);
+      }
+
+      &:focus {
+        color: $color-white;
+        background-color: rgb(40, 41, 157);
+      }
+    }
+
+    &-holiday {
+      background-color: rgb(195, 88, 120);
+      color: $color-white;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: $color-white;
+        background-color: red;
+      }
+    }
+
+    &-weekend {
+      color: red;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        background-color: blue;
+      }
+
+      &:focus {
+        color: $color-white;
+        background-color: darkblue;
+      }
+    }
+
+    &-last,
+    &-next {
+      background-color: rgb(236, 237, 237);
+      color: rgb(150, 151, 151);
+      cursor: no-drop;
+    }
+  }
+}
