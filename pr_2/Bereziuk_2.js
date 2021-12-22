@@ -37,7 +37,7 @@ function YourFuncName(n) {
 // значения. Учитываются лишь символы; пробелы или знаки препинания в расчет не берутся.
 // Анаграмма- слово, которое содержит все буквы другого слова
 // в том же количестве, но ином порядке
-const sort = (str) => str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]| /g,"").toLowerCase().split('').sort().join('');
+//const sort = (str) => str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]| /g,"").toLowerCase().split('').sort().join('');
 function  isAnagram(str1, str2) {
     if(typeof str1 !== 'string' || typeof str2 !== 'string') {
         return 'Вы ввели не стороку!';
